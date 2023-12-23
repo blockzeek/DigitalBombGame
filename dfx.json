@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "DigitalBombGame_backend": {
+      "main": "src/DigitalBombGame_backend/main.mo",
+      "type": "motoko"
+    },
+    "DigitalBombGame_frontend": {
+      "dependencies": [
+        "DigitalBombGame_backend"
+      ],
+      "source": [
+        "src/DigitalBombGame_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
